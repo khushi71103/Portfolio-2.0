@@ -113,13 +113,13 @@ export const mySocials = [
   },
   {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
+    href: "https://www.linkedin.com/in/khushi-chhetri-1b484024b/",
     icon: "/assets/socials/linkedIn.svg",
   },
   {
-    name: "Instagram",
-    href: "https://www.instagram.com/ali.sanatidev/reels/",
-    icon: "/assets/socials/instagram.svg",
+    name: "Github",
+    href: "https://github.com/khushi71103",
+    icon: "/assets/logos/github.svg",
   },
 ];
 
@@ -160,25 +160,25 @@ export const reviews = [
     name: "HackerRank",
     username: "@jack",
     body: " Secured a 5-star badge for problem solving on HackerRank",
-    img: "https://robohash.org/jack",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLYlCFrIs7OelYi4FFlx23TEc4Z_evhDZkoQ&s",
   },
   {
     name: "Hackathon",
     username: "@jill",
     body: "Secured 1st position in KALAM-92 Hackathon organised by ACS College",
-    img: "https://robohash.org/jill",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1aLmOH2ZiJ2WXlbCB1bsUV9Czr9t49e0tL-r-sq3TypEOg1mcSGwv4ClScWwGCFAjd5s&usqp=CAU",
   },
   {
     name: "Hackathon",
     username: "@john",
     body: " TECHNOVERSE by Cognizant(Finalist:offered an internship)",
-    img: "https://robohash.org/john",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuugNFaRZZVZ5OzuOezHzDZV3uG3TKNpsbf8e6o63ddswJcY66M6Iey_p0F3QI_t46TJo&usqp=CAU",
   },
   {
     name: "Problem Solving",
     username: "@alice",
     body: "Solved over 250+ DSA questions on various platforms Leetcode, GFG, CodingNinjas",
-    img: "https://robohash.org/alice",
+    img: "https://png.pngtree.com/png-vector/20210929/ourmid/pngtree-d-realistic-emoji-with-glasses-smileys-emoticons-happy-face-chat-icon-png-image_3961881.png",
   },
   
 ];

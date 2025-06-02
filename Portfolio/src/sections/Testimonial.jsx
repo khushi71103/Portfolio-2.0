@@ -4,7 +4,7 @@ import { reviews } from "../constants";
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
 
-const ReviewCard = ({ img, name, username, body }) => {
+const ReviewCard = ({ img, name, body }) => {
   return (
     <figure
       className={twMerge(
@@ -23,7 +23,6 @@ const ReviewCard = ({ img, name, username, body }) => {
           <figcaption className="text-sm font-medium text-white">
             {name}
           </figcaption>
-          <p className="text-xs font-medium text-white/40">{username}</p>
         </div>
       </div>
       <blockquote className="mt-2 text-sm">{body}</blockquote>
@@ -34,7 +33,7 @@ const ReviewCard = ({ img, name, username, body }) => {
 export default function Testimonial() {
   return (
     <div className="items-start mt-25 md:mt-35 c-space">
-      <h2 className="text-heading">Hear From My Clients</h2>
+      <h2 className="text-heading">Acheivements</h2>
       <div className="relative flex flex-col items-center justify-center w-full mt-12 overflow-hidden">
         <Marquee pauseOnHover className="[--duration:20s]">
           {firstRow.map((review) => (

@@ -103,6 +103,60 @@ export const myProjects = [
       },
     ],
   },
+  {
+    id: 4,
+    title: "Face Recognition",
+    description:
+      "Face recognition attendance application",
+    subDescription: [
+      "Developed a Facial recogination attendance System for College Department.",
+      "Currently testing for its applicability for department use.",
+      "Bulit using Python, tkinter for User Interface, Haar Cascade classifier.",
+      
+    ],
+    href: "https://github.com/khushi71103/faceRecoginition",
+    logo: "",
+    image: "https://empmonitor.com/blog/wp-content/uploads/2024/11/What-Is-a-Facial-Recognition-Attendance-System-1024x576.webp",
+    tags: [
+      {
+        id: 1,
+        name: "Python",
+        path: "/assets/logos/python.svg",
+      },
+      {
+        id: 2,
+        name: "SQLite",
+        path: "/assets/logos/sqlite.svg",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Giphy App",
+    description:
+      "React Native Giphy App",
+    subDescription: [
+      "Developed a gif app using React native expo.",
+      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
+      "Used the giphy store to fetch the api to get all gifs",
+      
+    ],
+    href: "https://github.com/khushi71103/giphyapp",
+    logo: "",
+    image: "/assets/projects/giphy.png",
+    tags: [
+      {
+        id: 1,
+        name: "React native",
+        path: "/assets/logos/reactNative.svg",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+    ],
+  },
 ];
 
 export const mySocials = [

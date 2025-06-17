@@ -1,4 +1,5 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion"; // You had "motion/react", which seems like a typo
+
 const ProjectDetails = ({
   title,
   description,
@@ -9,10 +10,10 @@ const ProjectDetails = ({
   closeModal,
 }) => {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm">
+    <div className="fixed inset-0 z-50 flex items-center justify-center w-full overflow-y-auto backdrop-blur-sm p-4 sm:p-8">
       <motion.div
-        className="relative max-w-2xl border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10"
-        initial={{ opacity: 0, scale: 0.5 }}
+        className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10"
+        initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
       >
         <button
@@ -26,10 +27,12 @@ const ProjectDetails = ({
           <h5 className="mb-2 text-2xl font-bold text-white">{title}</h5>
           <p className="mb-3 font-normal text-neutral-400">{description}</p>
           {subDescription.map((subDesc, index) => (
-            <p className="mb-3 font-normal text-neutral-400">{subDesc}</p>
+            <p key={index} className="mb-3 font-normal text-neutral-400">
+              {subDesc}
+            </p>
           ))}
-          <div className="flex items-center justify-between mt-4">
-            <div className="flex gap-3">
+          <div className="flex flex-wrap items-center justify-between mt-4 gap-y-3">
+            <div className="flex gap-3 flex-wrap">
               {tags.map((tag) => (
                 <img
                   key={tag.id}
@@ -39,9 +42,13 @@ const ProjectDetails = ({
                 />
               ))}
             </div>
-            <a className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation">
-              View Project{" "}
-              <img src="assets/arrow-up.svg" className="size-4" href={href} />
+            <a
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation text-white"
+            >
+              View Project <img src="assets/arrow-up.svg" className="size-4" />
             </a>
           </div>
         </div>

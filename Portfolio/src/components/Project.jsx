@@ -11,12 +11,20 @@ const Project = ({
   setPreview,
 }) => {
   const [isHidden, setIsHidden] = useState(false);
+
+  // Helper to check if screen is desktop-sized
+  const isDesktop = () => window.innerWidth >= 640; // Tailwind `sm:` breakpoint
+
   return (
     <>
       <div
         className="flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0"
-        onMouseEnter={() => setPreview(image)}
-        onMouseLeave={() => setPreview(null)}
+        onMouseEnter={() => {
+          if (isDesktop()) setPreview(image);
+        }}
+        onMouseLeave={() => {
+          if (isDesktop()) setPreview(null);
+        }}
       >
         <div>
           <p className="text-2xl">{title}</p>
